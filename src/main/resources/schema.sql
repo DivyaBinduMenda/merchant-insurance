@@ -1,0 +1,27 @@
+CREATE TABLE CLIENT (  
+	id INT AUTO_INCREMENT  PRIMARY KEY,  
+	name VARCHAR(50) NOT NULL,  
+	dob VARCHAR(30) NOT NULL,
+	address VARCHAR(50),
+	contact VARCHAR(30)
+); 
+
+CREATE TABLE POLICY (  
+	id INT AUTO_INCREMENT  PRIMARY KEY,  
+	Policy_Number VARCHAR(50) NOT NULL,  
+	Policy_Type VARCHAR(30) NOT NULL,
+	Coverage_Amount VARCHAR(50),
+	Premium VARCHAR(30),
+	START_DATE VARCHAR(30),
+	END_DATE VARCHAR(30),
+	client_id INT
+); 
+
+CREATE TABLE Claim (  
+	id INT AUTO_INCREMENT  PRIMARY KEY,  
+	Claim_Number VARCHAR(50) NOT NULL,  
+	Description VARCHAR(30) NOT NULL,
+	Claim_Date VARCHAR(50),
+	Claim_Status VARCHAR(30),
+	policy_id int
+); 
