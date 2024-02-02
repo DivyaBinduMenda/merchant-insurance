@@ -21,8 +21,8 @@ Steps to run this code:
        body:
        {
             "name":"bindu",
-            "dob":"12-12-2001",
-            "address": "rkv",
+            "dob":"12-12-2002",
+            "address": "sklm",
             "contact": "9191919191"
         }
           
